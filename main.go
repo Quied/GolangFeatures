@@ -21,10 +21,16 @@ func Temp(Amt ...int) {
 	fmt.Println(len(Amt))
 }
 
+type Gola struct {
+	One, Two string
+}
+
 func main() {
 
-	GetFunc := what()
-	fmt.Print("Func: ", GetFunc())
+	temp := Gola{One: "First", Two: "Second"}
+
+	fmt.Println(temp.One)
+	fmt.Println(temp.Two)
 
 	var masg string
 	masg = "ODR"
